@@ -1,0 +1,73 @@
+.title {
+    height: 400px;
+    background-image: url(../images/wave/background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+
+.title h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 72px;
+    font-weight: bold;
+}
+
+
+.chapter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 930px;
+    max-width: 90%;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: flex-start;
+}
+
+.chapter-text {
+    max-width: 500px;
+    margin-right: 40px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.reverse .chapter-text {
+    margin-left: 40px;
+    margin-right: 0;
+}
+
+.chapter-text h2 {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.chapter-text p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 25px;
+}
+
+span{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(255, 23, 23);
+}
+
+.footer {
+    margin-top: 100px;
+}
+
+@media (max-width: 800px) {
+    .title{
+        height: 160px;
+        max-width: 100%;
+    }
+}

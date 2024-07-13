@@ -1,0 +1,67 @@
+<!DOCTYPE html>                        <!--フルスクリーンHTML。このindex.htmlがトップページにあたる。-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>高校物理ホームページ</title>
+        <meta name="description" content="高校物理">
+        <meta name="viewport" content="width=device-width">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+        <link href="css/index.css" rel="stylesheet">       <!--index.htmlの書式を整えるファイルがindex.css。そのパスを記述する。rel以降は必須。-->
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-inner">
+                <a class="header-logo" href="index.html">
+                    <img src="images/common/logo.png" alt="ロゴ">
+                </a>
+                <button class="toggle-menu-button"></button>
+                <div class="header-site-menu">
+                    <nav class="site-menu">
+                        <ul>
+                            <li><a href="mechanics.html">力学</a></li>
+                            <li><a href="wave.html">波</a></li>
+                            <li><a href="electronics.html">電磁気</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <nav class="floating">
+                <ul>
+                    <li><a href="#">↑TOP</a></li>
+                </ul>
+            </nav>
+            <div class="first-view">
+                <div class="first-view-text">
+                    <h1>高校物理チャートへようこそ</h1>
+                    <p>このサイトは、高校物理において頻出する公式を中心に紹介するページである。</p>
+                    <p>高校物理で習う分野は大まかに分けると、力学、熱力学、波、電磁気、原子の5つに分かれる。</p>
+                    <p>本サイトではこの中で特に重要な力学、波、電磁気の3つについて特に重要な部分を簡潔に説明し、公式を紹介する。</p><br>
+                    <p>なお、中学までに習った重要公式(オームの法則や等速直線運動の式など)については説明で軽く触れる程度にして省略する。</p>
+                </div>
+                
+            </div>
+        </main>
+        <footer class="footer">
+            <nav class="site-menu">
+                <ul>
+                    <li><a href="mechanics.html">力学</a></li>
+                    <li><a href="wave.html">波</a></li>
+                    <li><a href="electronics.html">電磁気</a></li>
+                </ul>
+            </nav>
+            <a class="footer-logo" href="index.html">
+                <img src="images/common/logo_footer.png" alt="ロゴ">
+            </a>
+            <p class="copyright">
+                サイトの作成者<br><br>
+                <small>
+                    231205062 加藤 康介 <br>
+                    231205063 加藤 心
+                </small>
+            </p>
+        </footer>
+    </body>
+</html>

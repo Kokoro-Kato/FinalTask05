@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>                            <!--headタグでは文書の基本情報を記述-->
+        <meta charset="UTF-8">        <!--文字コードを指定-->
+        <title>力学</title>                                    <!--ウェブページのタブに書かれるタイトル-->
+        <meta name="description" content="力学の概要">               <!--そのページの概要を記す(ページを開いても見えないのでざっくりでいい)-->
+        <meta name="viewport" content="width=device-width">        <!--表示領域を定義-->
+        <script src="js/script.js"></script>                  <!--ページ内で動くものについて設定する-->
+        <link href="css/common.css" rel="stylesheet">
+        <link href="css/mechanics.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">    
+    </head>
+    <body>                                  <!--bodyタグでは実際にページの体裁を定義する-->
+        <header class="header">             <!--bodyを構成する３要素のうち一つであるヘッダー部分について-->
+            <div class="header-inner">                                <!--divタグでヘッダー内に箱を作成-->
+                <a class="header-logo" href="index.html">             <!--aタグで、クリックできる画像を貼り付けできる。href=の後のURLは画像をクリックしたときに飛ぶページ-->
+                    <img src="images/common/logo.png" alt="ロゴ">     <!--貼り付ける画像ファイルのパスを記述。ただし、このcommon.htmlと同じ場所にあるか同じ場所にあるフォルダ内に無いといけない。altの部分はその画像の説明であるが、無くてもページ上の表示に支障はない。-->
+                </a>
+                <button class="toggle-menu-button"></button>        <!--buttonタグでモバイル表示用-->
+                <div class="header-site-menu">                      <!--力学、波、電磁気、原子が並ぶ箱を用意-->
+                    <nav class="site-menu">                                   <!--ナビゲーションリンクをグループ化するnavタグ-->
+                        <ul>                                                 <!--ulタグとliタグは一緒に使われる。項目を表示するために使われる。-->
+                            <li><a href="mechanics.html">力学</a></li>       <!--実際にページに表示させる項目名(力学)と、「力学」をクリックしたときに飛ぶページのリンクを貼り付ける。-->
+                            <li><a href="wave.html">波</a></li>
+                            <li><a href="electronics.html">電磁気</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main">       <!--bodyを構成する３要素のうち一つであるメイン部分について-->
+            <div class="title">
+                <h1>力学</h1>
+            </div>
+            <div class="chapter">
+                <div class="chapter-text">
+                    <h2>等加速度直線運動</h2>
+                    <p>　<span>等加速度直線運動</span>は，加速度が一定でかつ，一直線上を移動する運動のことである．<br>
+                    　等加速度直線運動を考えることで，速度が変わる運動についても考えることができる．<br>
+                    　等加速度直線運動には3つ公式があり，それを以下に示す．余談だが，この公式は加速度が一定であれば使えるため，加速度の値が0で一定の等速直線運動にも使うことができる．</p><br>
+                    <img src="images/mechanics/formula1.png" alt="公式1"> 
+                </div>
+            </div>
+            <div class="chapter reverse">
+                <div class="chapter-text">
+                    <h2>運動の3法則</h2>
+                    <p>　運動の3法則について紹介する．<br>
+                    　運動の第一法則は，<span>慣性の法則</span>と呼ばれる．慣性とは物体が運動の状態を保とうとする性質である．<br>
+                    　運動の第二法則は，運動の法則と呼ばれる．この中には非常に重要な公式である<span>運動方程式</span>が含まれている．その公式を以下に示す．</p><br>
+                    <img src="images/mechanics/formula2.png" alt="公式2"> 
+                    <p>　運動の第三法則は，<span>作用反作用の法則</span>と呼ばれる．この法則では，力は2つの物体間で互いに及ぼしあっているということを説明している．</p><br>
+                </div>
+            </div>
+            <div class="chapter">
+                <div class="chapter-text">
+                    <h2>仕事</h2>
+                    <p>　物体に一定の大きさの力を加えて物体をある距離だけ動かしたとき，<span>力が物体に仕事をした</span>と表現できる．<br>
+                    　仕事には，仕事の原理というものがある．動滑車などの道具を使えば必要な力を小さくできるが動かす距離が長くなり，結局仕事の量が変わらないということである．<br>
+                    　仕事の公式を以下に示す．</p><br>
+                    <img src="images/mechanics/formula3.png" alt="公式3"> 
+                </div>
+            </div>
+            <div class="chapter reverse">
+                <div class="chapter-text">
+                    <h2>運動エネルギー<br>
+                        位置エネルギー</h2>
+                    <p><span>　運動エネルギー</span>とは，運動する物体がどの程度エネルギーをもっているか示したものである．<br>
+                    　例えば，同じボールが時速80kmと時速100kmで飛んできたとき，直感的に時速100kmのボールのほうが運動エネルギーが大きいと考えることができる．<br>
+                    <span>　位置エネルギー</span>とは，物体がある高さに存在することで蓄えられるエネルギーのことである．<br>
+                    　例えば，同じ質量をもつ物体をどの高さから落とすか考えるとき，直感的に高いところから落としたほうが床に大きな衝撃が加わると考えることができる．<br>
+                    　また，位置エネルギーを考える際は，基準水平面という位置エネルギーの基準点を自分で設定する必要がある(ただし，問題などで指定があればそれに従う必要あり)．この基準点は自由に設定することが可能である．<br>
+                    　位置エネルギーからは少し外れるが，高校物理では，ばねによる弾性エネルギーを位置エネルギーと見なして考える問題が多い．<br>
+                    　それぞれについて公式を以下に示す．</p><br>
+                    <img src="images/mechanics/formula4.png" alt="公式4"> 
+                </div>
+            </div>
+            <div class="chapter">
+                <div class="chapter-text">
+                    <h2>力学的エネルギー</h2>
+                    <p><span>　力学的エネルギー</span>とは，物体がもつ運動エネルギーと位置エネルギーの総和のことである．<br>
+                    　力学的エネルギーという概念は，<span>力学的エネルギー保存則</span>を考えるうえで重要である．<br>
+                    　力学的エネルギー保存則とは，内力だけが仕事をする物体の運動について，運動の前後で力学的エネルギーが一定になる(保存される)という法則である．ここで，内力とは重力や作用反作用の力などがあげられる．逆に，外力(摩擦力や空気抵抗力など)が作用していると成り立たない．<br>
+                    　力学的エネルギー保存則の公式を以下に示す．</p><br>
+                    <img src="images/mechanics/formula5.png" alt="公式5"> 
+                </div>
+            </div>
+            <div class="chapter reverse">
+                <div class="chapter-text">
+                    <h2>運動量保存則</h2>
+                    <p><span>　運動量</span>とは，物体の運動の勢いを表すベクトル量のことである．<br>
+                    　運動量は，質量と速度の積によって求めることが可能である．<br>
+                    <span>　運動量保存則</span>とは，物体が内力のみを及ぼしあっている(外力を受けていない)とき，運動の前後で全体の運動量が変化しないという法則のことである．<br>
+                    　力学的エネルギー保存則と同様，外力を受けていると使えないということに注意してほしい．<br>
+                    　運動量保存則について公式を以下に示す．</p><br>
+                    <img src="images/mechanics/formula6.png" alt="公式6"> 
+                </div>
+            </div>
+            <div class="chapter">
+                <div class="chapter-text">
+                    <h2>等速円運動</h2>
+                    <p><span>　等速円運動</span>とは，円周上を一定の速さで回る運動のことである．<br>
+                    　等速円運動に必要な力として，向心力というものがある．向心力とは，向心加速度を生じさせる力であり，力の向きは常に<span>円の中心方向</span>である．<br>
+                    　この事実は入試や試験で良く問われる内容なので覚えておくことを強く推奨する．<br>
+                    　等速円運動の運動方程式を以下に示す．</p><br>
+                    <img src="images/mechanics/formula7.png" alt="公式7"> 
+                </div>
+            </div>
+            <div class="chapter reverse">
+                <div class="chapter-text">
+                    <h2>単振動</h2>
+                    <p><span>　単振動</span>とは，等速円運動についてある1方向(x軸方向やy軸方向など)から見たときの運動である．<br>
+                    　1方向から見た運動であるため，一次元空間で周期的に運動をする性質をもつ．<br>
+                    　単振動の問題で特に重要となる公式には，ばね振り子と単振り子の周期の公式があげられる．
+                    それぞれについて公式を以下に示す．<br>
+                    　これらの公式は単振動の定義から導出可能なのでネットや教科書で調べて一度導出の過程を学ぶことをお勧めする．</p><br>
+                    <img src="images/mechanics/formula8.png" alt="公式8"> 
+                </div>
+            </div>
+            <div class="chapter">
+                <div class="chapter-text">
+                    <h2>万有引力の法則</h2>
+                    <p><span>　万有引力</span>とは，質量がはたらくすべての物体について発生する，引き付けあう力である．<br>
+                    　私たちが地球に引き付けられている力の正体は万有引力であり，重力の正体は万有引力と考えてよい．(厳密に言えば，重力は万有引力と地球の自転によって生じる遠心力の和を指す．しかし，遠心力の影響を最も受ける赤道上でも遠心力の大きさは万有引力の1/300程度で十分小さいため，高校物理の範囲では重力＝万有引力とみなされることがほとんど)<br>
+                    　万有引力の公式を以下に示す．</p><br>
+                    <img src="images/mechanics/formula9.png" alt="公式9"> 
+                </div>
+            </div>
+            <div class="chapter reverse">
+                <div class="chapter-text">
+                    <h2>万有引力による<br>位置エネルギー</h2>
+                    <p>　位置エネルギーについておさらいすると，位置エネルギーは物体がある高さに存在することで蓄えられるエネルギーと説明した．また，位置エネルギーは基準点を自分で設定する必要があるという特徴があった．<br>
+                    　しかしながら，万有引力の位置エネルギーに関しては，ほとんどの場合<span>無限遠を基準</span>に位置エネルギーを取ることが多い．そのため，問題に指示がなかったとしても無限遠を基準に位置エネルギーを取ることを強く勧める．<br>
+                    　万有引力による位置エネルギーについての公式を以下に示す．</p><br>
+                    <img src="images/mechanics/formula10.png" alt="公式10"> 
+                </div>
+            </div>
+        </main>
+        <footer class="footer">          <!--bodyを構成する３要素のうち一つであるフッター部分について-->
+            <nav class="site-menu">      <!--ナビゲーションリンクをグループ化するnavタグ-->
+                <ul>
+                    <li><a href="mechanics.html">力学</a></li>
+                    <li><a href="wave.html">波</a></li>
+                    <li><a href="electronics.html">電磁気</a></li>
+                </ul>
+            </nav>
+            <a class="footer-logo" href="index.html">                    <!--クリックできる画像の設定。href後のリンクは、画像をクリックしたときに飛ぶページ-->
+                <img src="images/common/logo_footer.png" alt="ロゴ">
+            </a>
+            <p class="copyright">
+                サイトの作成者<br><br>
+                <small>
+                    231205062 加藤 康介 <br>
+                    231205063 加藤 心
+                </small>
+            </p>
+        </footer>
+    </body>
+</html>

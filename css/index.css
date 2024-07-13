@@ -1,0 +1,204 @@
+@charset "utf-8";               /*ここでも文字コードを指定。これが無くてもページ上には影響はなかったが、書かないといけないらしい。*/
+
+nav.floating {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    background-color: #d0d0d0;
+}
+
+.first-view {
+    height: calc(100vh - 110px);
+    background-repeat: no-repeat;                        /*繰り返しなし*/
+    background-position: center center;        /*7～10行目で位置の調整を行う。*/
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.first-view-text {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-bottom: 80px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.first-view-text h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 56px;
+    line-height: 72px;
+    text-shadow: 1px 1px 10px #bababa;
+}
+
+.first-view-text p{
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+*,
+::before,
+::after {
+    padding: 0;                 /*余白の設定をリセット*/
+    margin: 0;                  /*余白の設定をリセット*/
+    box-sizing: border-box;     /*要素のサイズを「paddingとborderの値を含める」にする。これがあると、フッターのロゴと文字が若干内側に寄る。*/
+}
+
+ul, ol {
+    list-style: none;          /*common.htmlのリスト項目の頭にマークをつけない*/
+}
+
+a {                            /*common.htmlのすべてのaタグについて*/
+    color: inherit;            /*文字の色は親要素を継承*/
+    text-decoration: none;     /*リンクの下線を付けない*/
+}
+
+body {                         /*common.htmlのbody内について*/
+    font-family: sans-serif;       /*テキストのフォントをサンセリフ体に*/
+    font-size: 16pt;               /*フォントのサイズを16ptに*/
+    color: #000000;              /*フォントの色は黒*/
+    line-height: 1;                /*行の高さは１行*/
+    background-color: #ffffff;   /*背景色は白*/
+}
+
+img {
+    max-width: 100%;       /*画像の表示幅を最大に*/
+}
+
+.header-inner {             /*「.」でhtmlファイルのクラス名指定*/
+    max-width: 1200px;      /*ヘッダーの表示幅調整*/
+    height: 120px;          /*ヘッダーの高さ調整*/
+    margin-left: auto;      /*35,36行目でヘッダーの左右の余白をそろえる*/
+    margin-right: auto;
+    padding-left: 40px;     /*37,38行目でヘッダーの左右に40pxの余白を作る。これが無いと、ヘッダーのロゴとナビゲーションが左右に広がりすぎてしまう*/ 
+    padding-right: 40px;
+    display: flex;                       /*ヘッダーのロゴとナビゲーションを横並びにする。これが無いと縦並びになる。*/
+    justify-content: space-between;      /*ロゴを左側に、ナビゲーションを右側にする。これが無いと、ロゴのすぐ右にナビゲーションが来てしまい、間に十分な余白が無くなる。*/
+    align-items: center;                 /*ロゴとナビゲーションを上下中央にそろえる。これが無いと、ロゴとナビゲーションがヘッダーの最上部にきてしまう。*/
+}
+
+.toggle-menu-button {
+    display: none;            /*ハンバーガーメニューを非表示にする。*/
+}
+
+.header-logo {
+    display: block;         /*ヘッダーのロゴのサイズを指定できるようにする。*/
+    width: 170px;           /*ヘッダーのロゴのサイズを指定する。17pxとすると、縦と横が大幅に小さくなる。*/
+}
+
+.site-menu ul {
+    display: flex;       /*ヘッダーのナビゲーションを横並びにする。これが無いと縦並びになる。*/
+}
+
+.site-menu ul li {
+    margin-left: 20px;     /*58,59行目でナビゲーションの左右に余白を作る。これが無いと、「力学　波　電磁気　原子」が「力学波電磁気原子」になる。*/
+    margin-right: 20px;
+}
+
+.site-menu ul li a{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 1000;
+    font-style: normal;
+}
+
+@media (max-width: 800px) {     /*画面の幅が800px以下の場合(すなわち、端末がスマホの場合の表示方法)*/
+    .site-menu ul {
+        display: block;        /*ナビゲーションを縦並びにする。*/
+        text-align: center;    /*ナビゲーションは中央ぞろえにする。*/
+    }
+
+    .site-menu li {
+        margin-top: 20px;     /*ナビゲーションの余白を20pxにする。*/
+    }
+
+    .header {
+        position: fixed;                /*77～80行目でナビゲーションを上部に固定する。*/
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;    /*ヘッダーの背景色を城に*/
+        height: 50px;                   /*ヘッダーの高さは50px*/
+        z-index: 10;                                    /*重なり順を最上位に*/
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);     /*左から順に左右の距離、上下の距離、ぼかしの大きさ、影の色*/
+    }
+
+    .header-inner {
+        padding-left: 20px;     /*88,89行目で、ヘッダー内に作成した箱の左右の余白を20pxに設定する。*/
+        padding-right: 20px;
+        height: 100%;           /*ヘッダー内の箱の高さを100%に設定する。*/
+        position: relative;
+    }
+
+    .header-site-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        color: #ffffff;
+        background-color: #736e62;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        display: none;
+    }
+
+    .header-site-menu.is-show {
+        display: block;
+    }
+
+    .header-logo {
+        width: 100px;         /*ヘッダーロゴの大きさを100pxに設定。*/
+    }
+
+    .main {
+        padding-top: 150px;    /*main要素の上部にヘッダーと同じ高さの余白を作成*/
+    }
+
+    .footer-logo {
+        margin-top: 60px;     /*フッターロゴの上部の余白を60pxにする。*/
+    }
+
+    .copyright {
+        margin-top: 50px;     /*コピーライトの上部に50pxの余白を作成する。*/
+    }
+
+    .toggle-menu-button {
+        display: block;
+        width: 44px;
+        height: 34px;
+        background-image: url(../images/common/icon-menu.png);
+        background-size: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        outline: none;
+    }
+}
+
+.footer {
+    color: #ffffff;              /*フッターの文字の色を指定*/
+    background-color: #24211b;   /*フッターの背景色を指定*/
+    padding-top: 30px;             /*144,145行目でフッターの上下の余白を調整する。ともに0pxの場合、フッターの文字が上下にギチギチに詰めることになる。*/
+    padding-bottom: 15px;
+    display: flex;                /*146,147行目でフッター内の各要素を90度回転させて縦並びにする。*/
+    flex-direction: column;
+    align-items: center;          /*フッター内の各要素を中央に揃える。*/
+}
+
+.footer-logo {
+    display: block;      /*フッターのロゴのサイズを調整できるようにする。*/
+    width: 600px;        /*フッターのロゴのサイズを調整する。*/
+    margin-top: 90px;    /*フッターロゴの余白を調整する。*/
+    max-width: 100%;
+    height: auto;
+}
+
+.copyright {
+    font-size: 14pt;      /*コピーライトの文字の大きさを調整*/
+    font-weight: bold;    /*コピーライトの文字を太字にする*/
+    margin-top: 90px;     /*フッターの最上部の余白を調整*/
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>電磁気</title>
+        <meta name="description" content="電磁気の概要">
+        <meta name="viewport" content="width=device-width">
+        <script src="js/script.js"></script>
+        <link href="css/common.css" rel="stylesheet">
+        <link href="css/electronics.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">    
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-inner">
+                <a class="header-logo" href="index.html">
+                    <img src="images/common/logo.png" alt="ロゴ">
+                </a>
+                <button class="toggle-menu-button"></button>
+                <div class="header-site-menu">
+                    <nav class="site-menu">
+                        <ul>
+                            <li><a href="mechanics.html">力学</a></li>
+                            <li><a href="wave.html">波</a></li>
+                            <li><a href="electronics.html">電磁気</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="title">
+                <h1>電磁気</h1>
+            </div>
+            <div class="chapter">
+                <div class="chapter-text">
+                    <h2>クーロンの法則</h2>
+                    <p><span>　クーロンの法則</span>とは，2つの電荷の間にはたらく静電気力を求める際に便利な法則である．<br>
+                    　中学のときに，2つの電荷が同符号ならば離れあう力，異符号ならば引き付けあう力が発生すると学習した．クーロンの法則にも同様に考えることができ，静電気力を求めるだけでなく，力の向きも考えることができる．<br>
+                    　クーロンの法則について公式を以下に示す．</p><br>
+                    <img src="images/electronics/formula1.png" alt="公式1"> 
+                </div>
+            </div>
+            <div class="chapter reverse">
+                <div class="chapter-text">
+                    <h2>電場</h2>
+                    <p>　<span>電場</span>とは，ある場所に1[C]の正電荷を置いた際，受ける静電気力のことを指す．<br>
+                    　先ほどクーロンの法則を紹介した．電場の定義から，クーロンの法則の公式の片方の電気量を1にしたものと電場の大きさの公式が同じになることが分かる．<br>
+                    　電場について，それぞれの公式を以下に示す．先述した通り，クーロンの法則の公式と比較して眺めると良いだろう．</p><br>
+                    <img src="images/electronics/formula2.png" alt="公式2"> 
+                </div>
+            </div>
+            <div class="chapter">
+                <div class="chapter-text">
+                    <h2>コンデンサー</h2>
+                    <p>　<span>コンデンサー</span>とは，電子部品の1つである．中学で回路を学ぶ際に学習した抵抗と同じ類のものである．<br>
+                    　コンデンサーは基本的に2枚の金属板が向かい合う構造を取っており，それぞれに正・負電荷を与えると，電荷を蓄えることができる．また，放電もすることができるため，高校物理の電磁気では必ずと言っていいほど登場する重要なものである．<br>
+                    　コンデンサーについて蓄えられる電気量と，静電エネルギーについて公式を以下に示す．</p><br>
+                    <img src="images/electronics/formula3.png" alt="公式3"> 
+                </div>
+            </div>
+            <div class="chapter reverse">
+                <div class="chapter-text">
+                    <h2>磁場</h2>
+                    <p>　<span>磁場</span>とは，電流が作り出す場として定義されている．<br>
+                    　磁場に近い言葉として電場があるが，両者は性質が似ておりかなり混乱する分野である．イメージとしては，電荷が登場したときには電場，N極やS極といった磁石が登場した場合は磁場と考えてもらうのが良いだろう．<br>
+                    　高校物理では電流が作り出す磁場として，直線電流が作る磁場が出ることが実感では多い．他にも円形電流やソレノイド電流が作る磁場などたくさんあるため，そこは省略する．<br>
+                    　直線電流が作る磁場の強さについて，公式を以下に示す．理解が進むように図も掲載する．</p><br>
+                    <img src="images/electronics/formula4.png" alt="公式4"> 
+                    <img src="images/electronics/図1.png" alt="図1">
+                </div>
+            </div>
+            <div class="chapter">
+                <div class="chapter-text">
+                    <h2>ローレンツ力</h2>
+                    <p><span>　ローレンツ力</span>とは，電荷が磁場に<span>垂直に</span>運動しているとき，電荷にはたらく力のことである．<br>
+                    　重要な性質として，一様な磁場内に電荷を垂直に入射させた場合，ローレンツ力が向心力となり電荷は円運動をする特徴がある．これは力学と電磁気の定番な融合問題なので押さえておくと良いだろう．<br>
+                    　ローレンツ力の大きさの公式を以下に示す．</p><br>
+                    <img src="images/electronics/formula5.png" alt="公式5"> 
+                </div>
+            </div>
+            <div class="chapter reverse">
+                <div class="chapter-text">
+                    <h2>電磁誘導</h2>
+                    <p>　<span>電磁誘導</span>とは，コイル内の磁束が変化するとコイル内に電流が流れる現象のことである．この電流のことを誘導電流とも言う．<br>
+                    　電磁誘導についてもう少し詳しく説明すると，コイル内の磁束が変化するとき，コイルに誘導起電力(電位差)が生じることにより電流が流れるという仕組みになっている．<br>
+                    　高校物理では，誘導起電力を求める式として，<span>ファラデーの電磁誘導の法則</span>がよく使われる．<br>
+                    　ファラデーの電磁誘導の法則の公式を以下に示す．公式を見ると誘導起電力が負の値を取っていると思われがちだが，実際には値が負というわけではなく，向きが反対ということを示している．向きについての詳細はレンツの法則を調べていただきたい．</p><br>
+                    <img src="images/electronics/formula6.png" alt="公式6"> 
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <nav class="site-menu">
+                <ul>
+                    <li><a href="mechanics.html">力学</a></li>
+                    <li><a href="wave.html">波</a></li>
+                    <li><a href="electronics.html">電磁気</a></li>
+                </ul>
+            </nav>
+            <a class="footer-logo" href="index.html">
+                <img src="images/common/logo_footer.png" alt="ロゴ">
+            </a>
+            <p class="copyright">
+                サイトの作成者<br><br>
+                <small>
+                    231205062 加藤 康介 <br>
+                    231205063 加藤 心
+                </small>
+            </p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>                            <!--headタグでは文書の基本情報を記述-->
+        <meta charset="UTF-8">        <!--文字コードを指定-->
+        <title>高校物理</title>                                    <!--ウェブページのタブに書かれるタイトル-->
+        <meta name="description" content="高校物理">               <!--そのページの概要を記す(ページを開いても見えないのでざっくりでいい)-->
+        <meta name="viewport" content="width=device-width">        <!--表示領域を定義-->
+        <script src="js/toggle-menu.js"></script>                  <!--ページ内で動くものについて設定する-->
+        <link href="css/common.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">    
+    </head>
+    <body>                                  <!--bodyタグでは実際にページの体裁を定義する-->
+        <header class="header">             <!--bodyを構成する３要素のうち一つであるヘッダー部分について-->
+            <div class="header-inner">                                <!--divタグでヘッダー内に箱を作成-->
+                <a class="header-logo" href="index.html">             <!--aタグで、クリックできる画像を貼り付けできる。href=の後のURLは画像をクリックしたときに飛ぶページ-->
+                    <img src="images/common/logo.png" alt="ロゴ">     <!--貼り付ける画像ファイルのパスを記述。ただし、このcommon.htmlと同じ場所にあるか同じ場所にあるフォルダ内に無いといけない。altの部分はその画像の説明であるが、無くてもページ上の表示に支障はない。-->
+                </a>
+                <button class="toggle-menu-button"></button>        <!--buttonタグでモバイル表示用-->
+                <div class="header-site-menu">                      <!--力学、波、電磁気、原子が並ぶ箱を用意-->
+                    <nav class="site-menu">                                   <!--ナビゲーションリンクをグループ化するnavタグ-->
+                        <ul>                                                 <!--ulタグとliタグは一緒に使われる。項目を表示するために使われる。-->
+                            <li><a href="mechanics.html">力学</a></li>       <!--実際にページに表示させる項目名(力学)と、「力学」をクリックしたときに飛ぶページのリンクを貼り付ける。-->
+                            <li><a href="wave.html">波</a></li>
+                            <li><a href="electronics.html">電磁気</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main"></main>       <!--bodyを構成する３要素のうち一つであるメイン部分について-->
+        <footer class="footer">          <!--bodyを構成する３要素のうち一つであるフッター部分について-->
+            <nav class="site-menu">      <!--ナビゲーションリンクをグループ化するnavタグ-->
+                <ul>
+                    <li><a href="mechanics.html">力学</a></li>
+                    <li><a href="electronics.html">電磁気</a></li>
+                    <li><a href="wave.html">波</a></li>
+                </ul>
+            </nav>
+            <a class="footer-logo" href="index.html">                    <!--クリックできる画像の設定。href後のリンクは、画像をクリックしたときに飛ぶページ-->
+                <img src="images/common/logo_footer.png" alt="ロゴ">
+            </a>
+            <p class="copyright">
+                サイトの作成者<br><br>
+                <small>
+                    231205062 加藤 康介 <br>
+                    231205063 加藤 心
+                </small>
+            </p>
+        </footer>
+    </body>
+</html>
